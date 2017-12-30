@@ -37,11 +37,11 @@ class App extends Component {
       }
     }); */
 
-    fetch('http://localhost:8000/api/marca').then(function(data){
+    fetch('https://api.equipolts.org.pe/api/marca').then(function(data){
       return data.json()    
     }).then(function(data){
       ambito.setState({
-        data : data.data.data
+        data : data.marcas.data
       });
     });
 

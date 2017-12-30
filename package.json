@@ -13,6 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy" : "aws s3 cp /var/www/html/client-agencia/build s3://www.equipolts.org.pe --recursive --acl public-read"
   }
 }
